@@ -1,0 +1,15 @@
+{
+  "listen": ":443",
+  "domain": "myhome.duckdns.org",
+  "cert_cache": "/etc/voess/certs",
+  "users": [
+    { "name": "me", "uuid": "ВАШ-UUID-ИЗ-genuuid" }
+  ],
+  "allow": [
+    "192.168.1.50:22",
+    "192.168.1.50:80",
+    "192.168.1.50:3389"
+  ],
+  "home_only": true,
+  "log_access": false
+}

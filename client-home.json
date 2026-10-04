@@ -1,0 +1,11 @@
+{
+  "server": "myhome.duckdns.org:443",
+  "uuid": "ВАШ-UUID-ИЗ-genuuid",
+  "socks_listen": "127.0.0.1:1080",
+  "fingerprint": "chrome",
+  "forwards": [
+    { "listen": "127.0.0.1:2222", "target": "192.168.1.50:22" },
+    { "listen": "127.0.0.1:8080", "target": "192.168.1.50:80" },
+    { "listen": "127.0.0.1:3390", "target": "192.168.1.50:3389" }
+  ]
+}

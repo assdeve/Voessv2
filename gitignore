@@ -1,0 +1,14 @@
+# собранные программы
+voess2
+voess2.exe
+voess2-router
+*.upx
+
+# ключи, сертификаты и ваши реальные конфиги - НЕ коммитить
+*.pem
+*.key
+certs/
+/server.json
+/client.json
+test-*.json
+my-*.json
