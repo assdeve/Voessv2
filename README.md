@@ -120,15 +120,3 @@ curl --socks5-hostname 127.0.0.1:1080 https://ifconfig.me
 
 ## Лицензия
 MIT, см. [LICENSE](LICENSE).
-
-## Для владельца репозитория: как выпустить релиз
-1. Один раз выполните локально `go mod tidy` и закоммитьте `go.mod` и `go.sum`.
-2. Создайте тег и отправьте его:
-   ```
-   git tag v0.1.0
-   git push origin v0.1.0
-   ```
-   (или на сайте: Releases -> Draft a new release -> новый тег `v0.1.0` -> Publish).
-3. GitHub Actions сам соберёт все архивы и приложит их к релизу (вкладка Actions, 2-5 минут).
-4. В `scripts/install-linux.sh` замените `OWNER/voess` на свой `ник/репозиторий`, в README - `ВАШ_НИК`.
-Каждый push в `main` тоже запускает сборку, это проверка, что код компилируется.
